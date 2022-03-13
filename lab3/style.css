@@ -1,0 +1,120 @@
+/* add your CSS here */
+html{
+    height: 100%;
+    background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #0f222d;
+    background-size: auto;
+    font-size: 1.4rem;
+  }
+  
+  body{
+    padding: 20px;
+  }
+
+  .main{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  h1{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  p{
+      font-family: 'Karla', sans-serif;
+      text-align: center;
+      color: #0f222d;
+      font-size: 20px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 2px 15px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+    color: #6100ff;
+    background-color: #fff;
+    outline: 0;
+    border: none;
+    width: 30%;
+  }
+
+  #delete {
+    cursor: pointer;
+    padding: 2px 15px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    color: #ff0000;
+    background-color: #fff;
+    outline: 0;
+    border: none;
+    width: 20%;
+  }
+
+  #new-todo-form {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #new-todo-form > * {
+    margin: .25rem;
+  }
+  
+  #list {
+    max-width: 500px;
+    padding: 0;
+  }
+  
+  #todo-input{
+    font-family: 'Karla', sans-serif;
+    width: 90vw;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    font-size: 1.3em;
+    color: #2f4f4f;
+    
+  }
+  
+  .list-item {
+    font-family: 'Karla', sans-serif;
+    list-style: none;
+    margin: 5px;
+  }
+  
+  .list-item-label:hover,
+  [data-list-item-checkbox]:hover {
+    cursor: pointer;
+  }
+  
+  .list-item-label:hover > [data-list-item-text] {
+    color: #333;
+    text-decoration: line-through;
+  }
+  
+  [data-list-item-checkbox]:checked ~ [data-list-item-text] {
+    text-decoration: line-through;
+    color: #AAA;
+  }
+  
+  [data-button-delete] {
+    margin-left: .5rem;
+  }

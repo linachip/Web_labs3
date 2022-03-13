@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina, Cipciu, FAF-193</title> <!-- CHANGE THESE VALUES -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1>NOT-TO-DO LIST</h1>
+      <p>What you don't want to get done today?</p>
+    <form id="new-todo-form">
+      <input type="text" id="todo-input" placeholder="new task">
+      <button type="submit"><strong>ADD</strong></button>
+    </form>
+    <ul id="list">
+    <template id="list-item-template">
+      <li class="list-item">
+        <label class="list-item-label">
+          <input type="checkbox" data-list-item-checkbox>
+          <span data-list-item-text></span>
+        </label>
+        <button data-button-delete id="delete">Delete</button>
+      </li>
+    </template>
+    </ul>
+    </div>
+  </body>
+</html>
